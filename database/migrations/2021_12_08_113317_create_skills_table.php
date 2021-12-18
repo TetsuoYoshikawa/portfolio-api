@@ -17,6 +17,7 @@ class CreateSkillsTable extends Migration
             $table->id();
             $table->string("name");
             $table->integer("skill");
+            $table->string("image")->nullable();
             $table->timestamps();
         });
     }

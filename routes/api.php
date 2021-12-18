@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortfoliosController;
 use App\Http\Controllers\SkillsController;
+use App\Http\Controllers\MailSendController;
+use App\Http\Controllers\ContactsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +20,6 @@ use App\Http\Controllers\SkillsController;
 
 Route::get("/portfolio", [PortfoliosController::class, "get"]);
 Route::get("/skill", [SkillsController::class, "get"]);
+Route::get('/mail', [MailSendController::class, 'send']);
+
+Route::post('/contact', [ContactsController::class, 'send']);
