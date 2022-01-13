@@ -61,7 +61,7 @@ class PortfolioSeeder extends Seeder
             "image" => "gQtZF3LcrScUYlFKylRv93G1YLBx4DO2s5xdDipC.jpg",
             "github_front" => "https://github.com/TetsuoYoshikawa/portfolio.git",
             "github_api" => "https://github.com/TetsuoYoshikawa/portfolio-api.git",
-            "created" => "5日",
+            "created" => "20日",
             "url" => "https://Tesuo-Yoshikawa-portfolio.netlify.app",
             "detail" => "ショッピングサイトを作成し、物を購入しクレジットカードでの決済方法を学習する為に作成しました。",
             "difficulties" => "Laravelのみで、作成するのが初めてで、画面周りの機能等を確認するのに苦労した。",
