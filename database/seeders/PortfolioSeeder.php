@@ -57,7 +57,7 @@ class PortfolioSeeder extends Seeder
             $param
         );
         $param = [
-            "name" => "JUNKSHOP ONLINE",
+            "name" => "JUNKSHOP ONLINESITE",
             "image" => "gQtZF3LcrScUYlFKylRv93G1YLBx4DO2s5xdDipC.jpg",
             "github_front" => "https://github.com/TetsuoYoshikawa/portfolio.git",
             "github_api" => "https://github.com/TetsuoYoshikawa/portfolio-api.git",
