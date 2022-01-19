@@ -56,13 +56,14 @@ class PortfolioSeeder extends Seeder
         DB::table("portfolios")->insert(
             $param
         );
+
         $param = [
-            "name" => "JUNKSHOP ONLINESITE",
+            "name" => "JUNKSHOP ONLINE",
             "image" => "gQtZF3LcrScUYlFKylRv93G1YLBx4DO2s5xdDipC.jpg",
-            "github_front" => "https://github.com/TetsuoYoshikawa/portfolio.git",
-            "github_api" => "https://github.com/TetsuoYoshikawa/portfolio-api.git",
+            "github_front" => "https://github.com/TetsuoYoshikawa/junkshop.git",
+            "github_api" => "https://github.com/TetsuoYoshikawa/junkshop.git",
             "created" => "20日",
-            "url" => "https://Tesuo-Yoshikawa-portfolio.netlify.app",
+            "url" => "http://gentle-escarpment-08964.herokuapp.com/",
             "detail" => "ショッピングサイトを作成し、物を購入しクレジットカードでの決済方法を学習する為に作成しました。",
             "difficulties" => "Laravelのみで、作成するのが初めてで、画面周りの機能等を確認するのに苦労した。",
             "solutions" => "昔働いていたお店のショッピングサイトを、模擬しながら作成して、自分の経験をいかせて機能や画面を工夫して作成できよかった。"
