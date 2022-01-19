@@ -48,7 +48,7 @@ class PortfolioSeeder extends Seeder
             "github_front" => "https://github.com/TetsuoYoshikawa/portfolio.git",
             "github_api" => "https://github.com/TetsuoYoshikawa/portfolio-api.git",
             "created" => "5日",
-            "url" => "https://Tesuo-Yoshikawa-portfolio.netlify.app",
+            "url" => "https://Tetsuo-Yoshikawa-portfolio.netlify.app",
             "detail" => "問い合わせフォームを制作したことなく、メールの取り扱いについて学びながら、制作物をまとめるために作成しました。",
             "difficulties" => "Gmailを使用するにあたり、アカウントやパスワード等の設定、メールが送信できるまでの構築をしやすくするのに、苦労した。",
             "solutions" => "Laravelにもたくさんの機能があり、一つ一つ理解して、今後、アプリの制作に役に立てれるように、少しずつ知識の幅を広げていきたいです。"
