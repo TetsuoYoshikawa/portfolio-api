@@ -8,41 +8,6 @@
 -   Laravel 8.4
 -   MySQL 8.0
 
-## テーブル設計
-
-| portfolios   |                 |             |            |          |             |
-| ------------ | --------------- | ----------- | ---------- | -------- | ----------- | --- |
-| カラム名     | 型              | PRIMARY KEY | UNIQUE KEY | NOT NULL | FOREIGN KEY |
-| id           | unsigned bigint | ○           |            | ○        |             |
-| name         | varchar         |             |            | ○        |             |     |
-| image        | varchar         |             |            | ○        |             |     |
-| github_front | varchar         |             |            |          |             |     |
-| github_api   | varchar         |             |            |          |             |     |
-| created      | varchar         |             |            | ○        |             |     |
-| url          | varchar         |             |            | ○        |             |     |
-| detail       | varchar         |             |            | ○        |             |     |
-| difficulties | varchar         |             |            | ○        |             |     |
-| solutions    | varchar         |             |            | ○        |             |     |
-| created_at   | timestamp       |             |            |          |             |     |
-| updated_at   | timestamp       |             |            |          |             |     |
-
-| skills     |                 |             |            |          |             |
-| ---------- | --------------- | ----------- | ---------- | -------- | ----------- | --- |
-| カラム名   | 型              | PRIMARY KEY | UNIQUE KEY | NOT NULL | FOREIGN KEY |
-| id         | unsigned bigint | ○           |            | ○        |             |
-| name       | varchar         |             |            | ○        |             |     |
-| skill      | int             |             |            | ○        |             |     |
-| created_at | timestamp       |             |            |          |             |     |
-| updated_at | timestamp       |             |            |          |             |     |
-
-## API 設計
-
-| パス           | メソッド | リクエストボディ | クエリパラメータ | パスパラメータ | 概要                   |
-| -------------- | -------- | ---------------- | ---------------- | -------------- | ---------------------- | --- |
-| /api/contact   | POST     | name,email,text  |                  |                | お問い合わせメール送信 |
-| /api/portfolio | GET      |                  |                  |                | 制作物情報取得         |     |
-| /api/skill     | GET      |                  |                  |                | スキル情報取得         |
-
 ## API Document
 
 [ GET ] 制作物の情報を取得します
