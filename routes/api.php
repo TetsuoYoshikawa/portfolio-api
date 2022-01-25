@@ -20,6 +20,5 @@ use App\Http\Controllers\ContactsController;
 
 Route::get("/portfolio", [PortfoliosController::class, "get"]);
 Route::get("/skill", [SkillsController::class, "get"]);
-Route::get('/mail', [MailSendController::class, 'send']);
 
 Route::post('/contact', [ContactsController::class, 'send']);
