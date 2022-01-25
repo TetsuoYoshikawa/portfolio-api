@@ -10,7 +10,7 @@
 
 ## テーブル設計
 
-| portfolios   | 　              | 　          | 　         | 　       | 　          |
+| portfolios   |                 |             |            |          |             |
 | ------------ | --------------- | ----------- | ---------- | -------- | ----------- | --- |
 | カラム名     | 型              | PRIMARY KEY | UNIQUE KEY | NOT NULL | FOREIGN KEY |
 | id           | unsigned bigint | ○           |            | ○        |             |
@@ -26,7 +26,7 @@
 | created_at   | timestamp       |             |            |          |             |     |
 | updated_at   | timestamp       |             |            |          |             |     |
 
-| skills     | 　              | 　          | 　         | 　       | 　          |
+| skills     |                 |             |            |          |             |
 | ---------- | --------------- | ----------- | ---------- | -------- | ----------- | --- |
 | カラム名   | 型              | PRIMARY KEY | UNIQUE KEY | NOT NULL | FOREIGN KEY |
 | id         | unsigned bigint | ○           |            | ○        |             |
@@ -37,16 +37,11 @@
 
 ## API 設計
 
-| パス                 | メソッド | リクエストボディ                                                           | クエリパラメータ | パスパラメータ | 概要                   |
-| -------------------- | -------- | -------------------------------------------------------------------------- | ---------------- | -------------- | ---------------------- | ---------- |
-| /api/contact         | POST     | name,email,text                                                            |                  |                | お問い合わせメール送信 |
-| /api/portfolio       | GET      |                                                                            |                  |                | 制作物情報取得         |
-| /api/portfolio       | POST     | name,image,git_front,git_api,created,<br>url,detail,difficulties,solutions |                  |                | 制作物登録             |
-| /api/portfolio       | PUT      | name,image,git_front,git_api,created,<br>url,detail,difficulties,solutions |                  |                | 制作物更新             |
-| /api/portfolio       | DELETE   | id                                                                         |                  |                | 制作物削除             |
-| /api/portfolio/image | POST     | image                                                                      |                  |                | 制作物画像更新         |
-| /api/skill           | GET      |                                                                            |                  |                | スキル情報取得         |
-| /api/skill           | POST     | name,skill                                                                 |                  |                |                        | スキル登録 |
+| パス           | メソッド | リクエストボディ | クエリパラメータ | パスパラメータ | 概要                   |
+| -------------- | -------- | ---------------- | ---------------- | -------------- | ---------------------- | --- |
+| /api/contact   | POST     | name,email,text  |                  |                | お問い合わせメール送信 |
+| /api/portfolio | GET      |                  |                  |                | 制作物情報取得         |     |
+| /api/skill     | GET      |                  |                  |                | スキル情報取得         |
 
 ## API Document
 
